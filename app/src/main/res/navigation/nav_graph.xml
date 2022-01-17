@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/showFragment">
+
+    <fragment
+        android:id="@+id/showFragment"
+        android:name="com.example.my_recipe_aws_ec2_test.ShowFragment"
+        android:label="ShowFragment" >
+        <action
+            android:id="@+id/action_showFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.my_recipe_aws_ec2_test.EditFragment"
+        android:label="EditFragment" />
+
+</navigation>
